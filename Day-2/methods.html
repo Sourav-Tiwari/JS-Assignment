@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documnet</title>
+</head>
+<body>
+   <h1>Various methods of String and Arrays</h1> 
+   <script>
+       //A)Remaining Method of Strings
+       let str ="The quick 'jumps' brown fox jumps over the lazy dog";
+
+       // 1. length property - to find the length of string
+       console.log(str.length)
+
+       // 2. indexOf() - return the first occurence of specified letter or text in the given string
+       console.log(str.indexOf("jumps"));
+
+       //3. lastIndexOf()- return the last occurence of specified letter or text in the given string
+       console.log(str.lastIndexOf("jumps"));
+       
+       // Note:- Both IndexOf() and lastIndexOf() returns -1 if the text is not found
+
+       //4. search()- searches a specified value in string nad return the position of the same
+       console.log(str.search("jumps"));
+
+        // Note:- Both IndexOf() and search are not same  in inexOf() you can specified starting location to search the specified string
+        
+        //B) Remaining Methods of Arrays
+        let arr= ["Banana","Orange", "Apple","Mango"];
+
+        //1. join()- joins all elements into a string, works like toString() but in addition you can specify the separator in join()
+        console.log(arr.join("*"));
+
+        //2. shift()- this methods remove the first array element and shifts all other elements to a lower index\
+        console.log(arr.shift());
+        
+        //3. concat()- Concateneting two arrays
+        let arr1=["cat","Dog"];
+        console.log(arr.concat(arr1));
+</script>
+
+</body>
+</html>
