@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<h1>difference between var , let and const</h1>
+<body>
+    <script>
+        
+        /* 1. var variables can be updated and re-declared within its scope
+           2. let can be updated but not re-declared 
+           3. const variable can niether be updated nor re-declared */
+// Example of var
+ {
+  var a=10;
+  console.log(a);
+} //block 1
+{
+  a++;
+  console.log(a);
+} //block 2
+
+//Example of let
+{
+ let b=10;
+ console.log(b);
+} //block 1
+{
+  b++;
+  console.log(b);
+} //block 2
+
+//Example of const
+{
+ const PI=3.14;
+ console.log(PI);
+} //block 1
+{
+  console.log(PI);
+} //block 2
+    </script>
+</body>
+</html>

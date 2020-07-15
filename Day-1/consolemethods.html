@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<h1>Explaining Various console function with examples</h1>
+<body>
+    <script>
+        /* Various methods available with console fucntion is :
+        1. log()-print the output to the console
+        2. clear()- used to clear the console
+        3. error()- used to log error message to the console
+        4. warn()- used to log warning message to the console
+        5. time() and timeEnd()-to know the amount of time spend by a block of function 
+        6. table()-used to generate a table inside a console
+        7. count()-used to count the number taht the function hit by this counting method
+        
+          
+          examples for all is shown below */
+        
+
+       //1 
+        console.log('abc');
+       //2
+       console.clear(); 
+       //3
+        console.error('This is a simple error');
+       //4
+        console.warn('This is the warning');
+       //5
+        console.time('abc');
+        let fun=function(){
+            console.log('fun is running');
+        }
+        let fun2=function(){
+            console.log('fun2 is running');
+        }
+        fun();
+        fun2();
+        console.timeEnd('abc');
+        //6 
+        console.table({'a':1,'b':2, 'c':3});
+        //7
+        for(let i=0;i<5;i++){
+            console.count(i);
+        }
+
+
+    </script>
+    
+</body>
+</html>
