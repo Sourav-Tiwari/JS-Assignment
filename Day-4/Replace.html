@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<h1>Repalcing the Function Expression</h1>
+<body>
+    <script>
+        // Simple replacing function expression with Arrow function
+        
+        /*function ask(question,yes,no){
+            if(confirm(question)) yes()
+            else no();
+        }
+
+        ask("Do you agree?",
+            function() { alert("You agreed.");},
+            function() { alert("You canceled the execution.");}
+        );*/
+
+        let ask=(question,yes,no) => {
+            if(confirm(question)) yes();
+            else no();
+        }
+
+        ask("Do you agree?",
+            ()=> { alert("You agreed.");},
+            ()=> { alert("You canceled the execution.");}
+        );
+    </script>
+</body>
+</html>
