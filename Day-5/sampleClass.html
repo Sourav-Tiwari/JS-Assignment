@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<h1>Creating Various classes</h1>
+<body>
+<script>
+    class user{
+        constructor(name,age,email){
+            this.name=name;
+            this.age=age;
+            this.email=email;
+
+        }
+        login(){
+            console.log(`${this.name} has logged in`);
+            
+                }
+
+        logout(){
+            console.log(`${this.name} has been logged out`);
+            
+               }
+    }
+    class moderator extends user{
+        constructor(name,age,email,coins){
+            super(name,age,email);
+            this.coins=0;
+        }
+        addCoins(){
+            this.coins++;
+            console.log(`${this.name}has ${this.coin} coins`);
+            return this;
+                    }
+
+        removeCoins(){
+            this.coins--;
+            console.log(`${this.name} has ${this.coin} coins`);
+          return this;
+                    }        
+    }
+
+    class Admin extends moderator{
+
+        addCourse(user, course){
+            user.courses.push(course);
+            console.log(`${this.name} has enrolled in ${this.course} course`);
+            
+        }
+
+        deleteCourse(User, course){
+            user=user.filter(user=> {
+                return user.course!=user.course;
+            })
+        }
+
+   }
+//    let user1 = new user('Sourav',22,'S@gmail.com');
+//    user1.login();
+//    user1.logout();
+//    let user2= new user('Parag', 15,'P@gmail.com')
+//    user2.login();
+//    user2.logout();
+ 
+
+//    let mod1= new moderator ('Siddharth',20,'si@gmail.com');
+//    mod1.login();
+//    mod1.addCoins();
+//    mod1.removeCoins();
+//    mod1.logout();
+
+// //    let admin1 = new Admin(user1);
+// //    admin1.addCourse(user1,'JavaScript')
+
+</script>    
+</body>
+</html>
