@@ -1,0 +1,9 @@
+.container {
+    max-width: 750px;
+  }
+  h1 {
+    font-family: 'Algerian';
+  }
+  p {
+    margin: 25px;
+  }
